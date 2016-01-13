@@ -1,19 +1,6 @@
-Hi Professor,
+Music Store Website
 
-I am working on project alone. I have created user App part only.
+* Created a music store website as part of gradaute course work. which is MVC based.
+* Code is written in Java using Spring Framework.
 
-Thanks
-Gaurav
-
-Note: to run this project on UNIX/Linux with HSQLDB (easiest way):
-1. Start the HSQLDB server as explained in JdbcCheckup.java or use
-   "ant start-hsqldb" after cd'ing to the database directory here.
-   
-2. Use "ant config-hsqldb" , then "ant sysTest" when cd'd to this directory
-
-To use a real DB: you need to define environment variables as discussed in build.xml
- For Oracle database, set up env variables ORACLE_USER, ORACLE_PW, ORACLE_SITE
-  For MySQL use, set up env vars MYSQL_USER, MYSQL_PW
-  See ~eoneil/.cshrc for Solaris UNIX commands to define these (but use your own user, pw!)
-  See ~eoneil/tomcat.bash for the corresponding Linux commands
   
