@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+	<persistence-unit name="music2el" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<non-jta-data-source>java:comp/env/jdbc/hsql</non-jta-data-source>
+		<class>cs636.music.domain.Download</class>
+		<class>cs636.music.domain.Invoice</class>
+		<class>cs636.music.domain.LineItem</class>
+		<class>cs636.music.domain.Product</class>
+		<class>cs636.music.domain.Track</class>
+		<class>cs636.music.domain.User</class>
+
+		<properties>	
+			<!-- using <non-jta-source>'s JNI name "java:comp/env/jdbc/hsql", JPA can look up 
+		         a DataSource object held by tomcat, which has the url, user, password info 
+		         that is configured at this spot for the client-server case -->
+			<!-- to fix JNDI lookup (a workaround for eclipselink bug) -->
+			       
+		
+		  	<!-- To drop and replace existing schema this can be used. -->
+            <!--<property name="eclipselink.ddl-generation" value="drop-and-create-tables" />-->
+            
+			<!-- Configure simple SQL logging for demonstration. -->
+            <property name="eclipselink.logging.level" value="FINE" />
+            <property name="eclipselink.logging.thread" value="false" />
+            <property name="eclipselink.logging.session" value="false" />
+            <property name="eclipselink.logging.exceptions" value="false" />
+            <property name="eclipselink.logging.timestamp" value="false" />
+		</properties>
+	</persistence-unit>
+</persistence>

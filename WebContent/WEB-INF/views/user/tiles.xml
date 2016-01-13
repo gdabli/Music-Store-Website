@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>    
+<definition name="/user/login" extends="fullwidthpage">
+        <put-attribute name="content" value="/WEB-INF/views/user/login.jsp" />
+        <put-attribute name="scripts" value="/WEB-INF/layouts/nojs.jsp" />
+    </definition>
+    <definition name="/user/invoice" extends="fullwidthpage">
+        <put-attribute name="content" value="/WEB-INF/views/user/invoice.jsp" />
+        <put-attribute name="scripts" value="/WEB-INF/layouts/nojs.jsp" />
+    </definition>
+    <definition name="/user/home" extends="fullwidthpage">
+        <put-attribute name="content" value="/WEB-INF/views/user/home.jsp" />
+        <put-attribute name="scripts" value="/WEB-INF/layouts/nojs.jsp" />
+    </definition>
+    <definition name="/user/cart" extends="fullwidthpage">
+        <put-attribute name="content" value="/WEB-INF/views/user/cart.jsp" />
+        <put-attribute name="scripts" value="/WEB-INF/layouts/nojs.jsp" />
+    </definition>
+    <definition name="/user/catalog" extends="fullwidthpage">
+        <put-attribute name="content" value="/WEB-INF/views/user/catalog.jsp" />
+        <put-attribute name="scripts" value="/WEB-INF/layouts/nojs.jsp" />
+    </definition>
+    <definition name="/user/listen" extends="fullwidthpage">
+        <put-attribute name="content" value="/WEB-INF/views/user/listen.jsp" />
+        <put-attribute name="scripts" value="/WEB-INF/layouts/nojs.jsp" />
+    </definition>
+    <definition name="/user/product" extends="fullwidthpage">
+        <put-attribute name="content" value="/WEB-INF/views/user/product.jsp" />
+        <put-attribute name="scripts" value="/WEB-INF/layouts/nojs.jsp" />
+    </definition>
+    <definition name="/user/register" extends="fullwidthpage">
+        <put-attribute name="content" value="/WEB-INF/views/user/register.jsp" />
+        <put-attribute name="scripts" value="/WEB-INF/layouts/nojs.jsp" />
+    </definition>
+   
+    
+</tiles-definitions>
